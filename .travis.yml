@@ -1,10 +1,12 @@
 language: node_js
 node_js:
-- node
+  - "node"
+
 cache:
   directories:
-    - node_modules
+    - server/node_modules
 script:
     - cd server
     - npm install -g serverless
+    - npm install
     - sls deploy
