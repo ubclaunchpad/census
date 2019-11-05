@@ -5,6 +5,9 @@ service: census
 #org: your-org-name
 
 
+
+
+
 provider:
   name: aws
   runtime: nodejs10.x
@@ -28,6 +31,13 @@ role: arn:aws:iam::068764338046:role/serverlessdemo-dev-us-east-1-lambdaRole
 #    - exclude-me-dir/**
 
 functions:
+
   hello:
     handler: handler.hello
-#   
+ 
+
+
+    
+# Plugins
+plugins:
+  - serverless-offline  
