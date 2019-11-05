@@ -1,0 +1,27 @@
+# `docker-compose up` spins it up
+# `docker-compose down` brings it back down. adding -v will clear the volume. 
+# `docker container ls` shows you what containers you have open
+# `docker exec -it <container name> sh` will open a shell inside the live container. 
+
+# db connection details:
+# use `postgres://postgres:root@localhost:5432/census` as the connection string
+
+# download a workbench online to view the db contents in a gui while you're working. here's one: https://www.pgadmin.org/
+
+version: "3"
+services:
+  db:
+    image: "postgres"
+    container_name: "census_db"
+#   since this is a local db for testing, it's fine to keep passwords here.
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=census
+    ports:
+      - "54320:5432"
+    volumes:
+      - census-data:/var/lib/postgresql/data
+
+volumes: 
+  census-data:
