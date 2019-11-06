@@ -4,7 +4,7 @@ Type in :  `npm install -g serverless`  if you are running Serverless for the fi
  
  For basic Serverless deployment:
  
-1.Run CMD from local directory
+1.Run CMD from local directory (server/)
 
 2.Adjust implementation logic in handler.js
 
@@ -20,7 +20,6 @@ For **Serverless-Offline**:
 
 2. Use the given ROUTE on **Postman**, eg. http://localhost:3000/2015-03-31/functions/census-dev-hello/invocations to Test appropriately
 
-3. Deploy with: `serverless deploy`
 
 
 
