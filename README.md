@@ -20,7 +20,8 @@ For **Serverless-Offline**:
 
 2. Use the given ROUTE on **Postman**, eg. http://localhost:3000/2015-03-31/functions/census-dev-hello/invocations to Test appropriately
 
-
+### References
+<code>/server/.gitignore</code> is built on top of [https://github.com/serverless/serverless-starter/blob/master/.gitignore](https://github.com/serverless/serverless-starter/blob/master/.gitignore)
 
 
 
