@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ubclaunchpad/census#readme",
   "dependencies": {
+    "pg": "^7.12.1",
     "serverless-offline": "^5.12.0"
   }
 }
