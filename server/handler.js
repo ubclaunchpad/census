@@ -1,6 +1,10 @@
 'use strict';
+const pg = require('pg');
+const conString = "postgres://posgres@localhost:5432/postgres";
 
 module.exports.hello = async event => {
+  var client = new pg.Client(conString);
+  client.connect();
   return {
     statusCode: 200,
     body: JSON.stringify(
