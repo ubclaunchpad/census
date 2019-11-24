@@ -46,3 +46,6 @@ admin.env
 .env
 _meta
 .serverless
+
+#Sequelize STUFF
+/server/config/config.json
