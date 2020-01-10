@@ -30,7 +30,20 @@ functions:
 
   hello:
     handler: handler.hello
- 
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
+  
+  createUser:
+    handler: handler.createUser
+    events:
+      - http:
+          path: /users
+          method: post
+          cors: true
+
 # Plugins
 plugins:
   - serverless-offline  
