@@ -20,7 +20,7 @@
   "dependencies": {
     "pg": "^7.12.1",
     "sequelize": "^5.21.2",
-    "serverless-offline": "^5.12.0"
+    "serverless-offline": "^12.0.3"
   },
   "devDependencies": {
     "mocha": "^6.2.2"
